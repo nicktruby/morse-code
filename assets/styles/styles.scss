@@ -1,5 +1,73 @@
+$white: #F2F2F2;
+$blue: #3AAFA9;
+$black: #182628;
+$yellow: #FBAF00;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+html {
+  background-color: $blue;
+}
+
+header {
+  width: min(1200px, 100vw);
+  margin: auto;
+  height: 10vh;
+  color: $white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid $yellow;
+  h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+main {
+  height: 60vh;
+  width: 80vw;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+textarea {
+  font-size: 1em;
+  font-family: 'Cutive Mono', monospace;
+  flex-grow: 1;
+  padding: 0.5em;
+  margin: 2em;
+  width: 80%;
+}
+
+button {
+  font-size: 1em;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+footer {
+  text-align: center;
+  background-color: $blue;
+  color: $white;
+  border-top: 2px solid $yellow;
+  padding: 2em;
 }
